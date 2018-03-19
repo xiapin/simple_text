@@ -1,0 +1,1 @@
+cmd_/home/farsight/s5pv210/driver/5day/dev/dev.ko := arm-none-linux-gnueabi-ld -EL -r  -T /home/farsight/s5pv210/kernel/linux-3.0.8/scripts/module-common.lds --build-id  -o /home/farsight/s5pv210/driver/5day/dev/dev.ko /home/farsight/s5pv210/driver/5day/dev/dev.o /home/farsight/s5pv210/driver/5day/dev/dev.mod.o

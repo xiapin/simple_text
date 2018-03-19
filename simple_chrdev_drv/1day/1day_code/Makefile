@@ -1,0 +1,15 @@
+#指定内核源码的绝对路径
+KERNEL_DIR = /home/farsight/s5pv210/kernel/linux-3.0.8
+CUR_DIR = $(shell pwd)
+
+all:
+		#make进入到内涵源码目录，将当前目录下的源程序作为内核模块一起编译
+		make -C $(KERNEL_DIR) M=$(CUR_DIR) modules
+
+clean:
+		#将编译生成的文件删除
+		make -C $(KERNEL_DIR) M=$(CUR_DIR) clean
+
+obj-m = hello_drv.o
+		
+
